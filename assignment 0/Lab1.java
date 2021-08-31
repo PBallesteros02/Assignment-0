@@ -20,7 +20,7 @@ public class Lab1{
 		Scanner input = new Scanner (System.in)) {
 			// declare variables 
 			int test1, test2, test3;
-			final int NUM_TESTS = 3;
+			final int NUM_TESTS = 4;
 
 			// Get the Input: this will also help organize test order
 			System.out.println("Enter the score on the first test: ");
@@ -31,7 +31,7 @@ public class Lab1{
 			test3 = input.nextInt();
 			
 			// Calculate the average: this will calculate inputs together 
-			double average = (test1 + test2 + test3) / (double) NUM_TESTS;
+			double average = (test1 + test2 - test3) / (double) NUM_TESTS;
 			
 			// Display Results
 			System.out.println("The average test score is " + average );
